@@ -1,0 +1,69 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: lightcoral;
+}
+header nav{
+    background-color: rgb(120, 18, 18);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.recipecontainer{
+   text-align: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin:10px auto;
+    width:80%;
+    padding:20px;
+}
+.recipe{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    border-radius: 6px;
+    cursor:pointer;
+    max-width: 300px;
+
+}
+.recipe:hover{
+    transform:scale(1.02);
+}
+.recipe button{
+    font-size: 15px;
+    font-weight: 300px;
+    padding:8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin:18px auto;
+    background-color: black;
+    color:white;
+}
+.recipedetails{
+    display:none;
+    position:fixed;
+    background-color: rgb(120, 18, 18);
+    border-radius: 12px;
+    color:white;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width:40%; height:60%; font-size: 20px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    overflow-y:scroll;
+    padding:20px;
+}
+.recipeclosebutton{
+    position:absolute;
+    background-color: yellow;
+    border-radius: 4px;
+    top:20px;
+    right:20px;
+}
